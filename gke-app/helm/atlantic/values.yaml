@@ -1,0 +1,11 @@
+app: apus
+env: dev
+host: locallegend.ru
+
+RAILS_ENV: development
+
+image:
+  repository: ghcr.io/onedal/locallegend-atlantic
+  tag: feature-ll7
+
+

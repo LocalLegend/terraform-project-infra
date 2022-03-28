@@ -1,0 +1,11 @@
+additionalArguments:
+  - "--certificatesresolvers.letsencrypt.acme.email=sunrise3323@gmail.com"
+  - "--certificatesresolvers.letsencrypt.acme.storage=/data/acme.json"
+  - "--certificatesresolvers.letsencrypt.acme.caserver=https://acme-v02.api.letsencrypt.org/directory"
+  - "--certificatesResolvers.letsencrypt.acme.httpchallenge=true"
+  - "--certificatesResolvers.letsencrypt.acme.httpchallenge.entrypoint=web"
+  - "--api.insecure=true"
+  - "--accesslog=true"
+  - "--log.level=INFO"
+  - "--entrypoints.web.http.redirections.entryPoint.to=:443"
+  - "--entrypoints.web.http.redirections.entrypoint.scheme=https"
